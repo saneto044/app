@@ -10,6 +10,8 @@ const app = express()
 //Public folder for image
     app.use(express.static(__dirname + '/public'));
 //Routes
-
+    app.get('/', (req,res) => {
+        res.send('oi')
+    })
 
 app.listen(5000)
